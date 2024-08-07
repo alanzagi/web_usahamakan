@@ -1,3 +1,4 @@
+// Start Fungsi untuk penambahan angka
 document.addEventListener("DOMContentLoaded", function () {
   const counters = document.querySelectorAll(".counter");
 
@@ -33,3 +34,4 @@ document.addEventListener("DOMContentLoaded", function () {
 
   counters.forEach((counter) => observer.observe(counter));
 });
+// End Fungsi untuk penambahan angka
