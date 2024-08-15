@@ -6,6 +6,7 @@
     <title>Usaha Makanan</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </head>
   <body>
     <!-- Start Nav -->
@@ -62,7 +63,7 @@
     <!-- End Nav -->
 
     <!-- Start Main -->
-    <main class="relative bg-[url('img/ayam4.jpg')] bg-cover bg-center">
+    <main class="relative bg-[url('img/ayamgeprekwallpaper.jpg')] bg-center bg-cover bg-fixed">
       <div class="absolute inset-0 bg-black opacity-50"></div>
       <div class="relative z-10 flex items-center justify-start h-full">
         <div class="max-w-2xl pl-4 pt-60 pb-48">
@@ -78,21 +79,25 @@
     <!-- Start Section I -->
     <section class="bg-slate-100">
       <h1 class="text-3xl font-semibold tracking-tight text-gray-900 text-center pt-10 md:flex md:justify-center">Hubungi Kami</h1>
-      <div class="flex justify-center mt-2 mb-10 md:mt-6">
+      <p class="text-sm font-medium text-gray-900 text-center px-4 my-2 lg:max-w-xl lg:mx-auto">Ingin memesan menu? atau memiliki pertanyaan seputar restoran? Kamu bisa isi formulir di bawah untuk menghubungi kami ya.</p>
+      <div class="flex justify-center mt-2 mb-10 md:mt-4">
         <hr class="w-1/4 border border-orange-400 lg:w-1/5 lg:border" />
       </div>
-      <form class="max-w-sm mx-auto pb-10">
+      <form class="max-w-sm mx-auto pb-10" name="database">
         <div class="mb-5 space-y-2">
-          <input type="text" id="nama" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 lg:p-4" placeholder="Nama" required />
-          <input type="text" id="whatsapp" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 lg:p-4" placeholder="Nomor Whatsapp" required />
-          <input type="text" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 lg:p-4" placeholder="Email" required />
-          <textarea id="pesan" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 lg:p-5" placeholder="Pesan" required></textarea>
+          <input type="text" id="nama" name="nama" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-orange-500 focus:border-orange-500 block w-full p-2.5 lg:p-4" placeholder="Nama" required />
+          <input type="text" id="nomor" name="nomor" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-orange-500 focus:border-orange-500 block w-full p-2.5 lg:p-4" placeholder="Nomor Whatsapp" required />
+          <input type="email" id="email" name="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-orange-500 focus:border-orange-500 block w-full p-2.5 lg:p-4" placeholder="Email" required />
+          <textarea id="message-input" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-orange-500 focus:border-orange-500 block w-full p-2.5 lg:p-5" placeholder="Pesan" required></textarea>
         </div>
         <div class="flex justify-center">
-          <button type="submit" class="text-white bg-orange-500 hover:bg-orange-600 focus:ring-4 focus:outline-none focus:ring-orange-300 font-medium rounded-lg text-sm w-1/2 sm:w-auto px-5 py-2.5 text-center">Submit</button>
+          <button type="submit" id="message-submit-button" class="text-white bg-orange-500 hover:bg-orange-600 focus:ring-4 focus:outline-none focus:ring-orange-300 font-medium rounded-lg text-sm w-1/2 sm:w-auto px-5 py-2.5 text-center">
+            Kirim Pesan
+          </button>
         </div>
       </form>
     </section>
+
     <!-- End Section I -->
 
     <!-- Start Section II -->
@@ -100,19 +105,19 @@
       <div class="relative z-10 flex items-center justify-center h-full">
         <div class="text-center">
           <div class="grid grid-cols-1 gap-y-4 mt-6 mb-14 lg:mb-20 lg:grid-cols-3 lg:gap-x-5">
-            <a href="#" class="block max-w-sm p-6 bg-white bg-opacity-10 border border-gray-200 rounded-lg shadow backdrop-blur-sm">
+            <a href="https://g.co/kgs/pkGp4Jj" target="_blank" class="block max-w-sm p-6 bg-white bg-opacity-10 border border-gray-200 rounded-lg shadow backdrop-blur-sm">
               <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900">Alamat</h5>
-              <p class="font-normal text-gray-900">Jl. Kalimantan No. 122, Roban, Singkawang</p>
+              <p class="font-normal text-gray-900">Jl. Kridasana No.132, Pasiran, Kec. Singkawang Barat, Kota Singkawang, Kalimantan Barat.</p>
             </a>
 
-            <a href="#" class="block max-w-sm p-6 bg-white bg-opacity-10 border border-gray-200 rounded-lg shadow backdrop-blur-sm">
+            <a href="https://wa.me/6281521550913" target="_blank" class="block max-w-sm p-6 bg-white bg-opacity-10 border border-gray-200 rounded-lg shadow backdrop-blur-sm">
               <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900">Nomor Whatsapp</h5>
-              <p class="font-normal text-gray-900">0815-2155-0913</p>
+              <p class="font-normal text-gray-900">0815-2155-0913 (Alan)</p>
             </a>
 
-            <a href="#" class="block max-w-sm p-6 bg-white bg-opacity-10 border border-gray-200 rounded-lg shadow backdrop-blur-sm">
+            <a href="mailto:alanzagi@hotmail.com" target="_blank" class="block max-w-sm p-6 bg-white bg-opacity-10 border border-gray-200 rounded-lg shadow backdrop-blur-sm">
               <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900">Email</h5>
-              <p class="font-normal text-gray-900">alanzagi@hotmail.com</p>
+              <p class="font-normal text-gray-900">alanzagi@hotmail.com (Business)</p>
             </a>
           </div>
         </div>
