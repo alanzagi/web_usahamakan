@@ -1,7 +1,27 @@
-# Perwira Geprek
+## Company Profile Website Template - HTML5, TailwindCSS, Flowbite Framework
 
-Ini adalah project yang bergerak di bidang F&B khususnya untuk Restoran Perwira Geprek.
-Sebuah Website yang dipesan pada 6 Agustus 2024 dan selesai pada 16 Agustus 2024.
+Free template for company profile made using HTML5, TailwindCSS, and Flowbite!  
+It is a fully responsive template which you can use for your company or maybe for your own portfolio website.
 
-Showcase Website:
-https://web-usahamakanan.vercel.app/
+Demo Site: https://perwirageprek.pplgxcode.biz.id/  
+or 2nd Demo Site: https://web-usahamakan.vercel.app/
+
+## Support
+
+Support me on Trakteer (https://trakteer.id/alan_zagi)  
+You can start supporting by bought me an ice cream for Rp10.000 / 0.64 USD  
+Thank you very much!
+
+## Resource Used
+1. [Tailwind CSS v3.4.13](https://tailwindcss.com/docs/installation)
+2. [Flowbite v2.5.2 ](https://flowbite.com/docs/getting-started/introduction/)
+
+### Installation
+- Clone the repository
+```
+git clone https://github.com/alanzagi/web-usahamakan.git
+```
+
+## License
+
+[MIT license](https://opensource.org/licenses/MIT).
