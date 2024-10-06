@@ -13,13 +13,16 @@ You can start supporting by bought me an ice cream for Rp10.000 / 0.64 USD
 Thank you very much!
 
 ## Resource Used
+
 1. [Tailwind CSS v3.4.13](https://tailwindcss.com/docs/installation)
 2. [Flowbite v2.5.2 ](https://flowbite.com/docs/getting-started/introduction/)
 
 ### Installation
+
 - Clone the repository
+
 ```
-git clone https://github.com/alanzagi/web-usahamakan.git
+git clone https://github.com/alanzagi/web_usahamakan.git
 ```
 
 ## License
